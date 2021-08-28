@@ -140,5 +140,5 @@ XF86AudioRaiseVolume
 XF86AudioMute
 	amixer set Master toggle
 
-Print
+super + shift + s
 	flameshot gui
