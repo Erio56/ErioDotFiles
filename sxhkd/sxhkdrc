@@ -8,12 +8,14 @@ super + Return
 
 # program launcher
 super + @space
-	sh ~/.config/polybar/forest/scripts/launcher.sh
+	sh ~/.config/polybar/forest/scripts/rofi/launchers/colorful/launcher.sh
 
 #/home/erio/.config/rofi/launchers/text/launcher.sh
 
-super + shift + @space
-    dmenu
+
+
+super + control + @space
+    sh /home/erio/.config/polybar/forest/scripts/rofi/applets/menu/apps.sh 
 
 # launch microsoftEdge
 super + shift + Return
@@ -39,6 +41,14 @@ super + {_,shift + }w
 # alternate between the tiled and monocle layout
 super + m
 	bspc desktop -l next
+
+#Switch from float to Tiling again
+super + d
+    if [ -z "$(bspc query -N -n focused.floating)" ]; then \
+        bspc node focused -t floating; \
+    else \
+        bspc node focused -t tiled; \
+    fi
 
 # send the newest marked node to the newest preselected node
 super + y

@@ -1,2 +1,15 @@
 [Added Associations]
-application/x-shellscript=visual-studio-code.desktop;
+application/x-shellscript=VSCodium.desktop;visual-studio-code.desktop;
+text/plain=visual-studio-code.desktop;VSCodium.desktop;wine-extension-txt.desktop;nvim.desktop;
+image/jpeg=feh.desktop;mirage.desktop;
+application/zip=paman.desktop;
+text/x-csrc=visual-studio-code.desktop;
+image/png=feh.desktop;mirage.desktop;viewnior.desktop;
+
+[Default Applications]
+x-scheme-handler/kite=kite-copilot.desktop
+text/html=microsoft-edge-dev.desktop
+x-scheme-handler/http=microsoft-edge-dev.desktop
+x-scheme-handler/https=microsoft-edge-dev.desktop
+x-scheme-handler/about=microsoft-edge-dev.desktop
+x-scheme-handler/unknown=microsoft-edge-dev.desktop
